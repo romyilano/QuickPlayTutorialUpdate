@@ -1,9 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,30 +18,30 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="88" sectionHeaderHeight="40" sectionFooterHeight="40" translatesAutoresizingMaskIntoConstraints="NO" id="tSW-Bj-t5x">
-                                <rect key="frame" x="20" y="68" width="560" height="464"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="20" y="68" width="335" height="531"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoClipCell" rowHeight="88" id="DYW-Bp-5Sa" customClass="VideoTableViewCell" customModule="QuickPlay" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="40" width="560" height="88"/>
+                                        <rect key="frame" x="0.0" y="40" width="335" height="88"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DYW-Bp-5Sa" id="abh-mn-X1O">
-                                            <rect key="frame" x="0.0" y="0.0" width="560" height="87.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="335" height="87.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Color_Bars" translatesAutoresizingMaskIntoConstraints="NO" id="bi6-Gx-ft3">
-                                                    <rect key="frame" x="8" y="6" width="72" height="72"/>
+                                                    <rect key="frame" x="15" y="9" width="72" height="66.5"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="72" id="bNo-4a-Jt0"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9Q-Lj-j5N">
-                                                    <rect key="frame" x="88" y="31" width="464" height="21"/>
+                                                    <rect key="frame" x="95" y="34" width="225" height="15.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -63,29 +66,29 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="McG-7M-4pF"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video Clips:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0p-gg-ova">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Video Clips:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0p-gg-ova">
                                 <rect key="frame" x="20" y="40" width="90.5" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="6kj-EE-BYr"/>
                                     <constraint firstAttribute="height" constant="20" id="Upe-iM-oDu"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-GN-GMc">
-                                <rect key="frame" x="20" y="540" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qo8-GN-GMc" userLabel="addVideoClip">
+                                <rect key="frame" x="20" y="607" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="tB3-R2-z6M"/>
                                     <constraint firstAttribute="width" constant="40" id="x4O-fh-BYT"/>
                                 </constraints>
                                 <state key="normal" image="Add_Butt"/>
                                 <connections>
-                                    <action selector="addVideoClip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JDC-lh-Lll"/>
+                                    <action selector="addVideoClipWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f8x-iQ-VBS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-v4-1nQ">
-                                <rect key="frame" x="75" y="540" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hhN-v4-1nQ" userLabel="addRemote">
+                                <rect key="frame" x="75" y="607" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="pRm-xN-LDp"/>
                                     <constraint firstAttribute="height" constant="40" id="qc5-rb-5uy"/>
@@ -93,43 +96,44 @@
                                 <state key="normal" image="Add_Remote_Butt"/>
                                 <connections>
                                     <action selector="addRemoteStream:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RzL-dZ-YgT"/>
+                                    <action selector="addRemoteStreamWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CMb-fx-1Gh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcZ-Bo-qt0">
-                                <rect key="frame" x="540" y="540" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcZ-Bo-qt0" userLabel="playVideoClip">
+                                <rect key="frame" x="315" y="607" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="BGG-sm-Afa"/>
                                     <constraint firstAttribute="height" constant="40" id="s9f-P6-Uus"/>
                                 </constraints>
                                 <state key="normal" image="Play_Butt"/>
                                 <connections>
-                                    <action selector="playVideoClip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wam-Wn-sC2"/>
+                                    <action selector="playVideoClipWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uj-qb-DJv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-cE-wdF">
-                                <rect key="frame" x="485" y="540" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcd-cE-wdF" userLabel="playAllVideoClips">
+                                <rect key="frame" x="260" y="607" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="RHf-rV-is2"/>
                                     <constraint firstAttribute="width" constant="40" id="uOu-bC-gXy"/>
                                 </constraints>
                                 <state key="normal" image="Play_All_Butt"/>
                                 <connections>
-                                    <action selector="playAllVideoClips:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZVT-2Q-mxF"/>
+                                    <action selector="playAllVideoClipsWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kzv-1X-OOo"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr5-R8-b8v">
-                                <rect key="frame" x="130" y="540" width="40" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lr5-R8-b8v" userLabel="deleteVideoClips">
+                                <rect key="frame" x="130" y="607" width="40" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oEc-8y-DAd"/>
                                     <constraint firstAttribute="width" constant="40" id="zJn-iD-NIv"/>
                                 </constraints>
                                 <state key="normal" image="Remove_Butt"/>
                                 <connections>
-                                    <action selector="deleteVideoClip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6NS-dy-HRk"/>
+                                    <action selector="deleteVideoClipWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yyu-vc-v4I"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="I0p-gg-ova" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1HN-MG-PkP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fcd-cE-wdF" secondAttribute="bottom" constant="20" id="59e-Os-Zdp"/>
